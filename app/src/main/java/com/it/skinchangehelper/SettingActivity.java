@@ -1,18 +1,14 @@
 package com.it.skinchangehelper;
 
 import android.Manifest;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 
 import com.it.skin_library.utils.PreferencesUtils;
-
-import java.io.File;
-import java.util.Objects;
+import com.it.skinchangehelper.base.BaseActivity;
 
 public class SettingActivity extends BaseActivity {
 

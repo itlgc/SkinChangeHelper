@@ -1,4 +1,4 @@
-package com.it.skinchangehelper;
+package com.it.skinchangehelper.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,6 +9,7 @@ import android.view.View;
 import com.it.skin_library.SkinManager;
 import com.it.skin_library.bean.AttrsBean;
 import com.it.skin_library.core.IGeneralSkin;
+import com.it.skinchangehelper.R;
 
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;

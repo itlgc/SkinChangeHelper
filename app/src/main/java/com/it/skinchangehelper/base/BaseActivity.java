@@ -1,10 +1,12 @@
-package com.it.skinchangehelper;
+package com.it.skinchangehelper.base;
 
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import com.it.skin_library.SkinDynamicActivity;
 import com.it.skin_library.utils.PreferencesUtils;
+import com.it.skinchangehelper.R;
+
 import java.io.File;
 import androidx.annotation.Nullable;
 

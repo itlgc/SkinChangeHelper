@@ -61,7 +61,7 @@ public class SkinDynamicActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    protected void defaultSkin(int themeColorId) {
+    public void defaultSkin(int themeColorId) {
         this.skinDynamic(null, themeColorId);
     }
     /**
@@ -70,7 +70,7 @@ public class SkinDynamicActivity extends AppCompatActivity {
      * @param themeColorId 修改statusBar、navigationBar、ActionBar等的颜色
      */
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    protected void skinDynamic(String skinPath, int themeColorId) {
+    public void skinDynamic(String skinPath, int themeColorId) {
         SkinManager.getInstance().loaderSkin(skinPath);
 
         // TODO: 添加对bar的支持

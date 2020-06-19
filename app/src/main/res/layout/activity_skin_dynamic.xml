@@ -144,7 +144,7 @@
             android:textColor="@color/skin_textColor" />
 
         <!-- 测试自定义控件换肤 -->
-        <com.it.skinchangehelper.CustomCircleView
+        <com.it.skinchangehelper.view.CustomCircleView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="5dp"

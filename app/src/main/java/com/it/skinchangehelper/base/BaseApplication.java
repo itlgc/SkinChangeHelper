@@ -1,4 +1,4 @@
-package com.it.skinchangehelper;
+package com.it.skinchangehelper.base;
 
 import android.app.Application;
 
