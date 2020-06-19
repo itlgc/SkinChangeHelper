@@ -125,13 +125,24 @@
         android:orientation="vertical">
 
 
+
+
         <Button
             android:id="@+id/btn_setting"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginTop="5dp"
             android:background="@color/skin_item_color"
-            android:text="换肤设置"
+            android:text="动态换肤设置"
+            android:textColor="@color/skin_textColor" />
+
+        <Button
+            android:id="@+id/btn_local"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/skin_item_color"
+            android:text="APP内置换肤"
             android:textColor="@color/skin_textColor" />
 
         <Button

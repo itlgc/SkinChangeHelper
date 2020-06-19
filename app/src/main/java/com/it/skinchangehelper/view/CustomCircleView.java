@@ -30,7 +30,7 @@ public class CustomCircleView extends View implements IGeneralSkin {
     public CustomCircleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
-        attrsBean = new AttrsBean();
+
 
         // 根据自定义属性，匹配控件属性的类型集合，如：circleColor
         TypedArray typedArray = context.obtainStyledAttributes(attrs,
@@ -40,8 +40,8 @@ public class CustomCircleView extends View implements IGeneralSkin {
         int corcleColorResId = typedArray.getResourceId(R.styleable.CustomCircleView_circleColor, 0);
 
         // 存储到临时JavaBean对象
+        attrsBean = new AttrsBean();
         attrsBean.saveViewResource(typedArray, R.styleable.CustomCircleView);
-        // 这一句回收非常重要！obtainStyledAttributes()有语法提示！！
         typedArray.recycle();
 
         mTextPain = new Paint();
@@ -63,6 +63,10 @@ public class CustomCircleView extends View implements IGeneralSkin {
         int radius = Math.min(width, height);
         // 利用canvas画一个圆
         canvas.drawCircle(width, height, radius, mTextPain);
+
+//        mTextPain.setColor(getResources().getColor(R.color.colorAccent));
+//        mTextPain.setTextSize(25);
+//        canvas.drawText("自定义控件",width,height,mTextPain);
     }
 
     @Override
