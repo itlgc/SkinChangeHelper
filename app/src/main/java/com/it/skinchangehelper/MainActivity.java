@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.it.skinchangehelper.base.BaseActivity;
+import com.it.skinchangehelper.simple.LocalActivity;
+import com.it.skinchangehelper.simple.SettingActivity;
+import com.it.skinchangehelper.simple.TestActivity;
 
 public class MainActivity extends BaseActivity {
 

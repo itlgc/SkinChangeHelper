@@ -1,4 +1,4 @@
-package com.it.skinchangehelper;
+package com.it.skinchangehelper.simple;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.it.skin_library.utils.PreferencesUtils;
+import com.it.skinchangehelper.R;
 import com.it.skinchangehelper.base.BaseActivity;
 
 public class SettingActivity extends BaseActivity {

@@ -1,4 +1,4 @@
-package com.it.skinchangehelper.view;
+package com.it.skinchangehelper.simple.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -1,4 +1,4 @@
-package com.it.skinchangehelper;
+package com.it.skinchangehelper.simple;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 
 import com.it.skin_library.SkinLocalActivity;
 import com.it.skin_library.utils.PreferencesUtils;
+import com.it.skinchangehelper.R;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDelegate;
 

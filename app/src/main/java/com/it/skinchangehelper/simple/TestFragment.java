@@ -1,10 +1,11 @@
-package com.it.skinchangehelper;
+package com.it.skinchangehelper.simple;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.it.skinchangehelper.R;
 import com.it.skinchangehelper.base.BaseFragment;
 
 import androidx.annotation.NonNull;

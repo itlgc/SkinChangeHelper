@@ -1,7 +1,8 @@
-package com.it.skinchangehelper;
+package com.it.skinchangehelper.simple;
 
 import android.os.Bundle;
 
+import com.it.skinchangehelper.R;
 import com.it.skinchangehelper.base.BaseActivity;
 
 import androidx.annotation.Nullable;
