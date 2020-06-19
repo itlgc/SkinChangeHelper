@@ -1,5 +1,6 @@
 package com.it.skin_library;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
@@ -10,6 +11,10 @@ import android.view.ViewGroup;
 
 import com.it.skin_library.core.IGeneralSkin;
 import com.it.skin_library.core.CustomAppCompatViewInflater;
+import com.it.skin_library.utils.ActionBarUtils;
+import com.it.skin_library.utils.NavigationUtils;
+import com.it.skin_library.utils.StatusBarUtils;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
@@ -69,11 +74,17 @@ public class SkinDynamicActivity extends AppCompatActivity {
         SkinManager.getInstance().loaderSkin(skinPath);
 
         // TODO: 添加对bar的支持
+        if (themeColorId != 0) {
+            int themeColor = SkinManager.getInstance().getColor(themeColorId);
+            StatusBarUtils.forStatusBar(this, themeColor);
+            NavigationUtils.forNavigation(this, themeColor);
+            ActionBarUtils.forActionBar(this, themeColor);
+        }
 
         applyViews(getWindow().getDecorView());
     }
 
-    private void applyViews(View view) {
+    protected void applyViews(View view) {
         if (view instanceof IGeneralSkin) {
             IGeneralSkin generalSkin = (IGeneralSkin) view;
             generalSkin.onSkinChange();
