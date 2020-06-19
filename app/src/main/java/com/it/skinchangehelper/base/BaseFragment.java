@@ -30,7 +30,7 @@ public class BaseFragment extends Fragment {
 
         //实际开发设为公用变量
         skinPath = Environment.getExternalStorageDirectory().getAbsolutePath()
-                + File.separator + "net163.skin";
+                + File.separator + "demo.skin";
     }
 
 

@@ -1,2 +1,2 @@
-include ':app', ':skin_library'
+include ':app', ':skin_library', ':skin_package'
 rootProject.name='SkinChangeHelper'

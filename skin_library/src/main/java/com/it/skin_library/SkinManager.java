@@ -129,12 +129,12 @@ public class SkinManager {
         if (isDefaultSkin) return resourceId;
 
 
-        // 使用app内置资源加载，是因为内置资源与皮肤包资源一一对应（“netease_bg”, “drawable”）
+        // 使用app内置资源加载，是因为内置资源与皮肤包资源一一对应（“main_bg”, “drawable”）
         String resourceName = appResources.getResourceEntryName(resourceId);
         String resourceType = appResources.getResourceTypeName(resourceId);
 
         // 动态获取皮肤包内的指定资源ID
-        // getResources().getIdentifier(“netease_bg”, “drawable”, “com.it.skin.packages”);
+        // getResources().getIdentifier(“main_bg”, “drawable”, “com.it.skin.packages”);
         int skinResourceId = skinResources.getIdentifier(resourceName, resourceType,
                 skinPackageName);
 

@@ -22,7 +22,7 @@ public class BaseActivity extends SkinDynamicActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         skinPath = Environment.getExternalStorageDirectory().getAbsolutePath()
-                + File.separator + "net163.skin";
+                + File.separator + "demo.skin";
     }
 
     @Override
