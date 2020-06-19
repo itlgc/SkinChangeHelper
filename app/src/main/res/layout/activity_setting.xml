@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="50dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_changeskin"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/skin_item_color"
+        android:onClick="skinDynamic"
+        android:text="换肤"
+        android:textColor="@color/skin_textColor" />
+
+    <Button
+        android:id="@+id/btn_default"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/skin_item_color"
+        android:onClick="skinDefault"
+        android:text="默认"
+        android:textColor="@color/skin_textColor" />
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/skin_item_color"
+        android:text="返回"
+        android:textColor="@color/skin_textColor" />
+</LinearLayout>

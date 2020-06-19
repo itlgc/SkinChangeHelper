@@ -124,31 +124,22 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_changeskin"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:background="@color/skin_item_color"
-            android:onClick="skinDynamic"
-            android:text="换肤"
-            android:textColor="@color/skin_textColor" />
 
         <Button
-            android:id="@+id/btn_default"
+            android:id="@+id/btn_setting"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginTop="5dp"
             android:background="@color/skin_item_color"
-            android:onClick="skinDefault"
-            android:text="默认"
+            android:text="换肤设置"
             android:textColor="@color/skin_textColor" />
 
         <Button
+            android:id="@+id/btn_jump"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginTop="5dp"
             android:background="@color/skin_item_color"
-            android:onClick="jumpSelf"
             android:text="跳转"
             android:textColor="@color/skin_textColor" />
 
